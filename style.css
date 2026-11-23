@@ -28,12 +28,39 @@ body {
       トップ画像
 -------------------- */
 
-img {
-  display: block;
+.cat-box {
+  position: relative;
+  width: 280px;
   max-width: 100%;
-  border-radius: 16px;         /* 画像の角を丸くする */
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08); /* ふんわりした影 */
   margin: 16px 0 28px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cat-box img {
+  display: block;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  margin: 0;
+}
+
+.cat-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cat-box:hover,
+.cat-box:active {
+  transform: rotate(-3deg) scale(1.02);
+}
+
+.cat-box:hover .cat-hover,
+.cat-box:active .cat-hover {
+  opacity: 1;
 }
 
 /* --------------------
