@@ -3,10 +3,10 @@
 -------------------- */
 
 :root {
-  --theme-color: #3b7a6b;      /* 落ち着いたフォレストグリーン */
-  --accent-color: #d98a3c;     /* 温かみのあるオレンジブラウン（黒猫の瞳の色イメージ） */
-  --bg-color: #faf8f5;         /* 目に優しいクリーム・アイボリー */
-  --card-bg: #ffffff;          /* コンテンツ背景の白 */
+  --theme-color: #34495e;
+  --accent-color: #d4a338;
+  --bg-color: #f7f7f9;
+  --card-bg: #ffffff;
 }
 
 * {
